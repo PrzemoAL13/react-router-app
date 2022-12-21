@@ -15,6 +15,9 @@ const Navbar = () => {
 				<button className='ui button'>
 					<NavLink to='/contact'>Contact</NavLink>
 				</button>
+				<button className='ui button'>
+					<NavLink to='/cardhook'>CardHook</NavLink>
+				</button>
 			</div>
 		</nav>
 	);

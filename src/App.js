@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Card from "./components/Card";
+import CardHook from "./components/CardHook";
 
 function App() {
 	return (
@@ -16,7 +17,10 @@ function App() {
 					<Route exact path='/' element={<Home />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/contact' element={<Contact />} />
-					<Route path='/card/:us' element={<Card />} />
+					{/* problem z przekazaniem props */}
+					{/* <Route path='/card/:us' element={<Card />} /> */}
+					<Route path='/cardhook' element={<CardHook />} />
+					<Route path='/cardhook/:123' element={<CardHook />} />
 				</Routes>
 			</div>
 		</Router>
